@@ -2,7 +2,7 @@
 	npm install dateformat discord.js tail
 */
 
-token = "";
+const { token } = require('./private.json');
 
 const Tail = require('tail').Tail;
 const Discord = require('discord.js');
