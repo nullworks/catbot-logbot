@@ -184,7 +184,7 @@ var tails = [];
 function locateLogs()
 {
 	try {
-	fs.readdir('.', (error, files) => {
+	fs.readdir('/opt/cathook/data', (error, files) => {
 		if (error)
 		{
 			console.log(error);
@@ -192,6 +192,7 @@ function locateLogs()
 		}
 		for (let file of files)
 		{
+			file = '/opt/cathook/data/' + file;
 			if (!watching[file] && /chat-.+\.csv/.exec(file))
 			{
 				//console.log(`Found log file: ${file}`);
