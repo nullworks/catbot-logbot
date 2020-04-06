@@ -208,7 +208,7 @@ function locateLogs()
 }
 
 client.on('ready', () => {
-  client.user.setActivity('niggers burn', { type: 'WATCHING' });
+  client.user.setActivity('?????????', { type: 'WATCHING' });
 })
 
 locateLogs();
